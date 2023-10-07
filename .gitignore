@@ -4,3 +4,4 @@
 *.vsidx
 .vs/dontbelatewebsite/v17/.wsuo
 .vs/dontbelatewebsite/v17/.wsuo
+*.sqlite
