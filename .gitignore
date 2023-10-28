@@ -8,3 +8,5 @@
 .vs/VSWorkspaceState.json
 .vs/slnx.sqlite
 .vs/dontbelatewebsite/v17/.wsuo
+*.sqlite
+*.json
