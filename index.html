@@ -17,8 +17,9 @@
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">
         <style>
             .card {
+                cursor:pointer;
                 background-color:gainsboro;
-                margin:15px;
+                margin:50px;
                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                 transition: 0.3s;
                 width: 300px;
@@ -89,8 +90,11 @@
 
             <section class="featured-product section-padding">
                 <h3 style="padding:25px">Loja produtos oficias DBL</h3>
-                <div class="card" onclick="openEmail()">
-                    <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/mochila2-removebg-preview.png?updatedAt=1701351743182" alt="Avatar" class="cardImg">
+                <div class="card" onclick="openEmail('Mochila')">
+                    <div class="cardImg">
+                        <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/mochila2-removebg-preview.png?updatedAt=1701351743182" alt="Avatar" 
+                             style="image-rendering:optimizeQuality;height:370px">
+                    </div>
                     <div class="containerImg">
                         <h4><b>Mochila DBL</b></h4>
                         <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
@@ -100,8 +104,11 @@
                         <label style="float:right">15€</label>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/guarda-chuvas-removebg-preview.png?updatedAt=1701351743058" alt="Avatar" class="cardImg">
+                <div class="card" onclick="openEmail('Guarda-chuva')">
+                    <div class="cardImg">
+                        <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/guarda-chuvas-removebg-preview.png?updatedAt=1701351743058" alt="Avatar"
+                             style="image-rendering:optimizeQuality;height:170px;margin-top:105px;">
+                    </div>
                     <div class="containerImg">
                         <h4><b>Guarda-chuva</b></h4>
                         <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
@@ -109,6 +116,59 @@
                         <label style="width: 10px; height: 20px; background-color: white; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
                         <label style="width: 10px; height: 20px; background-color: black; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
                         <label style="float:right">16€</label>
+                    </div>
+                </div>
+                <div class="card" onclick="openEmail('Caneca')">
+                    <div class="cardImg">
+                        <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/Caneca-removebg-preview.png?updatedAt=1701351743150" alt="Avatar"
+                             style="image-rendering:optimizeQuality;height:270px;margin-top:55px">
+                    </div>
+                    <div class="containerImg">
+                        <h4><b>Caneca</b></h4>
+                        <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
+                        <label style="width:10px;height:20px;background-color:gray;border-color:forestgreen;border-style:solid;border-width:0.5pt;border-radius:5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: white; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: black; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="float:right">10€</label>
+                    </div>
+                </div>
+                <div class="card" onclick="openEmail('Boné')">
+                    <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/Bone-removebg-preview.png?updatedAt=1701351743112" alt="Avatar" class="cardImg">
+                    <div class="containerImg">
+                        <h4><b>Boné</b></h4>
+                        <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
+                        <label style="width:10px;height:20px;background-color:gray;border-color:forestgreen;border-style:solid;border-width:0.5pt;border-radius:5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: white; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: black; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="float:right">10€</label>
+                    </div>
+                </div>
+                <div class="card" onclick="openEmail('Camisola')">
+                    <div class="cardImg">
+                        <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/camisola_preta-removebg-preview.png?updatedAt=1701351743053" alt="Avatar"
+                             style="image-rendering:optimizeQuality;height:210px;margin-top:85px;margin-left:5px">
+                    </div>
+                    <div class="containerImg">
+                        <h4><b>Camisola</b></h4>
+                        <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
+                        <label style="width:10px;height:20px;background-color:gray;border-color:forestgreen;border-style:solid;border-width:0.5pt;border-radius:5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: white; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: black; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="float:right">20€</label>
+                    </div>
+                </div>
+                <div class="card" onclick="openEmail('Pin DBL')">
+                    <div class="cardImg">
+                        <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/PinDBL-removebg-preview.png?updatedAt=1701351743115" alt="Avatar"
+                             style="image-rendering:optimizeQuality;height:110px;margin-top:135px;margin-left:5px">
+                    </div>
+                    <div class="containerImg">
+                        <h4><b>Pin DBL</b></h4>
+                        <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
+                        <label style="width:10px;height:20px;background-color:gray;border-color:forestgreen;border-style:solid;border-width:0.5pt;border-radius:5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: white; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: black; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="float:right">2,5€</label>
                     </div>
                 </div>
             </section>
