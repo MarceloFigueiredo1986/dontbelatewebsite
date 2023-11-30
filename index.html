@@ -15,15 +15,42 @@
         <link rel="stylesheet" href="css/slick.css"/>
 
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+        <style>
+            .card {
+                background-color:gainsboro;
+                margin:15px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 300px;
+                height:470px;
+                border-radius:15px;
+                float:left;
+            }
+
+            .cardImg {
+                background-color:white;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                min-height:370px;
+            }
+
+                .card:hover {
+                    padding:5px;
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                }
+
+            .containerImg{
+                padding:10px;
+            }
+        </style>
     </head>
-    
     <body>
         <section class="preloader">
             <div class="spinner">
                 <span class="sk-inner-circle"></span>
             </div>
         </section>
-    
+
         <main>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -32,11 +59,11 @@
                     </button>
 
                     <a class="navbar-brand" href="index.html">
-                        <img src=https://ik.imagekit.io/da113ycvp/logo.png?updatedAt=1696278893200" style="margin-top:-20px" width="70" height="70" />
+                        <img src=https://ik.imagekit.io/da113ycvp/logo.png?updatedAt =1696278893200" style="margin-top:-20px" width="70" height="70" />
                     </a>
                     <div class="navbar-brand" style="margin-left:25px;">
                         <a href="pedalsempre.html">
-                            <img src=https://ik.imagekit.io/da113ycvp/pedalsempre.png?updatedAt =1701118029169" width="50" height="50" />
+                            <img style="margin-left:22px" src=https://ik.imagekit.io/da113ycvp/pedalsempre.png?updatedAt =1701118029169" width="50" height="50" />
                             <p style="font-size:10pt">Loja oficial aqui</p>
                         </a>
                     </div>
@@ -58,53 +85,36 @@
                     </div>
                 </div>
             </nav>
-            <br style="height:150px"/>
-            <section class="slick-slideshow" style="height:900px">   
-                <div class="slick-custom">
-                    <img src="images/slideshow/A.jpg" class="img-fluid" alt="">
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title" style="position:absolute;bottom:55px">Maratona dos 5 cumes, Barcelos</h1>
-                                </div>
-                            </div>
-                        </div>
+            <br style="height:150px" />
+
+            <section class="featured-product section-padding">
+                <h3 style="padding:25px">Loja produtos oficias DBL</h3>
+                <div class="card" onclick="openEmail()">
+                    <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/mochila2-removebg-preview.png?updatedAt=1701351743182" alt="Avatar" class="cardImg">
+                    <div class="containerImg">
+                        <h4><b>Mochila DBL</b></h4>
+                        <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
+                        <label style="width:10px;height:20px;background-color:gray;border-color:forestgreen;border-style:solid;border-width:0.5pt;border-radius:5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: white; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: black; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="float:right">15€</label>
                     </div>
                 </div>
-
-                <div class="slick-custom">
-                    <img src="images/slideshow/B.jpg" class="img-fluid" alt="">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title" style="position:absolute;bottom:55px">Marco Costa Vence Granfondo</h1>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card">
+                    <img src="https://ik.imagekit.io/da113ycvp/ArtigosDBL/guarda-chuvas-removebg-preview.png?updatedAt=1701351743058" alt="Avatar" class="cardImg">
+                    <div class="containerImg">
+                        <h4><b>Guarda-chuva</b></h4>
+                        <label style="font-size:16pt;height:32px;margin-top:-10px">Cores:</label>
+                        <label style="width:10px;height:20px;background-color:gray;border-color:forestgreen;border-style:solid;border-width:0.5pt;border-radius:5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: white; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="width: 10px; height: 20px; background-color: black; border-color: forestgreen; border-style: solid; border-width: 0.5pt; border-radius: 5px"></label>
+                        <label style="float:right">16€</label>
                     </div>
                 </div>
-
-                <div class="slick-custom">
-                    <img src="images/slideshow/C.jpg" class="img-fluid" alt="">
-
-                    <div class="slick-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-10 col-10">
-                                    <h1 class="slick-title" style="position:absolute;bottom:75px">Trio de ataque!</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </section>
 
             <section class="featured-product section-padding">
-                <div class="container">
+                <div class="containerImg">
                     <div class="row">
 
                         <div class="col-12 text-center">
@@ -238,7 +248,7 @@
         </main>
 
         <footer class="site-footer">
-            <div class="container">
+            <div class="container" onclick="">
                 <div class="row">
 
                     <div class="col-lg-3 col-10 me-auto mb-4">
@@ -252,11 +262,9 @@
 
                         <ul class="social-icon">
 
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                            <li><a href="https://www.youtube.com/@dblbike7401" class="social-icon-link bi-youtube"></a></li>
+                            <li><a href="https://www.facebook.com/DBLBikeOficial" class="social-icon-link bi-facebook"></a></li>
+                            <li><a href="https://www.instagram.com/dblbike/" class="social-icon-link bi-instagram"></a></li>
                         </ul>
                     </div>
 
@@ -271,6 +279,20 @@
         <script src="js/jQuery.headroom.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
+
+        <script type="text/javascript">
+                function openEmail(produto) {
+                    
+                var recipientEmail = 'Dontbelatebike@gmail.com';
+                var subject = 'Compra ' + produto;
+
+                var body = 'Gostaria de tratar da compra de um' + produto + '. O que preciso fazer?';
+
+                var mailtoLink = 'mailto:' + recipientEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+                window.location.href = mailtoLink;
+}
+        </script>
 
     </body>
 </html>
